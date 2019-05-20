@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="450.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BillController">
+   <children>
+      <ImageView fitHeight="450.0" fitWidth="500.0" layoutX="1.0">
+         <image>
+            <Image url="@../file/bck3.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="208.0" layoutY="26.0" text="Hospital Bill" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="170.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="94.0" text="Name">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="240.0" layoutY="93.0" text="Lastname">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="166.0" text="Doctor">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="225.0" text="Description">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Line endX="300.0" layoutX="50.0" layoutY="360.0" startX="-100.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" />
+      <Label layoutX="29.0" layoutY="392.0" text="Total">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="101.0" layoutX="231.0" layoutY="234.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="31.0" layoutX="231.0" layoutY="164.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="31.0" layoutX="93.0" layoutY="92.0" stroke="BLACK" strokeType="INSIDE" width="110.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fefeff" height="31.0" layoutX="338.0" layoutY="92.0" stroke="BLACK" strokeType="INSIDE" width="110.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="31.0" layoutX="321.0" layoutY="392.0" stroke="BLACK" strokeType="INSIDE" width="110.0" />
+      <Label fx:id="nameLabel" layoutX="100.0" layoutY="95.0" prefHeight="26.0" prefWidth="95.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lastNameLabel" layoutX="342.0" layoutY="95.0" prefHeight="26.0" prefWidth="102.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="doctorLabel" layoutX="231.0" layoutY="166.0" prefHeight="26.0" prefWidth="200.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="descriptionLabel" layoutX="240.0" layoutY="241.0" prefHeight="31.0" prefWidth="175.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalLabel" layoutX="325.0" layoutY="395.0" prefHeight="26.0" prefWidth="102.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

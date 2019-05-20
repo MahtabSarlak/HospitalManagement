@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NurseLoginController">
+    <children>
+        <ImageView fitHeight="600.0" fitWidth="550.0">
+            <image>
+                <Image url="@../file/bg-01.jpg" />
+            </image>
+        </ImageView>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="500.0" layoutX="160.0" layoutY="54.0" stroke="BLACK" strokeType="INSIDE" width="350.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="50.0" />
+        <PasswordField fx:id="passtext" layoutX="168.0" layoutY="270.0" prefHeight="30.0" prefWidth="200.0" promptText="Password" AnchorPane.leftAnchor="175.0" AnchorPane.rightAnchor="175.0" />
+        <TextField fx:id="usertext" layoutX="184.0" layoutY="180.0" prefHeight="30.0" prefWidth="200.0" promptText="Username" AnchorPane.bottomAnchor="400.0" AnchorPane.leftAnchor="175.0" AnchorPane.rightAnchor="175.0" />
+        <Button fx:id="btn" layoutX="192.0" layoutY="367.0" mnemonicParsing="false" onAction="#handlebtn" prefHeight="32.0" prefWidth="152.0" text="login" textAlignment="CENTER" />
+        <Label layoutX="175.0" layoutY="129.0" text="Username" AnchorPane.bottomAnchor="453.0" AnchorPane.leftAnchor="175.0" />
+        <Label layoutX="176.0" layoutY="227.0" prefHeight="30.0" prefWidth="78.0" text="Password" AnchorPane.bottomAnchor="340.0" AnchorPane.leftAnchor="175.0" />
+        <Label layoutX="249.0" layoutY="72.0" prefHeight="32.0" prefWidth="39.0" text="Login" textAlignment="CENTER" />
+        <ImageView fitHeight="30.0" fitWidth="24.0" layoutX="123.0" layoutY="170.0" AnchorPane.bottomAnchor="400.0" AnchorPane.leftAnchor="125.0">
+            <image>
+                <Image url="@../file/avatar.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="30.0" fitWidth="24.0" layoutX="125.0" layoutY="270.0" AnchorPane.leftAnchor="125.0">
+            <image>
+                <Image url="@../file/Security-Password.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

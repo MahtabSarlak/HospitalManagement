@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeController">
+    <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0">
+         <image>
+            <Image url="@../file/bck6.jpg" />
+         </image>
+      </ImageView>
+        <Label layoutX="247.0" layoutY="21.0" text="Health Care" textFill="#166eba">
+            <font>
+                <Font name="2  Arabic Style" size="55.0" />
+            </font>
+        </Label>
+        <ImageView fx:id="doctorimg" fitHeight="176.0" fitWidth="209.0" layoutX="75.0" layoutY="197.0" onDragDetected="#handleDoctor" onMouseClicked="#handleDoctor">
+            <image>
+                <Image url="@../file/doctor.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="nurseimg" fitHeight="176.0" fitWidth="189.0" layoutX="553.0" layoutY="197.0" onDragDetected="#handleNurse" onMouseClicked="#handleNurse">
+            <image>
+                <Image url="@../file/nurse.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="adminimg" fitHeight="176.0" fitWidth="209.0" layoutX="320.0" layoutY="197.0" onMouseClicked="#handleAdmin">
+            <image>
+                <Image url="@../file/admin.png" />
+            </image>
+        </ImageView>
+      <ImageView fitHeight="95.0" fitWidth="122.0" layoutX="14.0" layoutY="491.0" onMouseClicked="#handleFinance">
+         <image>
+            <Image url="@../file/m2.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="87.0" fitWidth="99.0" layoutX="701.0" layoutY="505.0" onMouseClicked="#handleExit">
+         <image>
+            <Image url="@../file/e2.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
